@@ -38,6 +38,7 @@ body {
 
 h1 {
     font-size: 32px;
+    animation: vibrate .3s linear infinite both;
 }
 
 h2 {
