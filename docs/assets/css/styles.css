@@ -10,3 +10,7 @@ body {
 a {
     color: #24FF33;
 }
+
+a:visited {
+    color: #24FF33;
+}
