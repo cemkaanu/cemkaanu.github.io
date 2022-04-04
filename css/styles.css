@@ -1,3 +1,4 @@
+@import "animations.css";
 body {
     margin: 0;
     text-align: center;
@@ -32,7 +33,7 @@ body {
 }
 
 .link-item:hover {
-    animation: animate__pulse 5s;
+    animation: vibrate .3s linear infinite both;
 }
 
 h1 {
