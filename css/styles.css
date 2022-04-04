@@ -31,6 +31,10 @@ body {
     text-align: center;
 }
 
+.link-item:hover {
+    animation: animate__pulse 5s;
+}
+
 h1 {
     font-size: 32px;
 }
