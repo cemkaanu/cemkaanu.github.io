@@ -3,7 +3,7 @@ body {
     text-align: center;
     color: #ffffff;
     background-color: #222222;
-    font-size: 120px;
+    font-size: 32px;
     font-family: Montserrat, sans-serif;
 }
 
@@ -36,23 +36,23 @@ body {
 }
 
 h1 {
-    font-size: 96px;
+    font-size: 64px;
 }
 
 h2 {
-    font-size: 72px;
+    font-size: 48px;
 }
 
 p {
-    font-size: 48px;
+    font-size: 32px;
 }
 
 a {
     color: #24FF33;
-    font-size: 54px;
+    font-size: 36px;
 }
 
 a:visited {
     color: #24FF33;
-    font-size: 54px;
+    font-size: 36px;
 }
