@@ -26,17 +26,25 @@
     }
 }
 
-
-/*
-@keyframes background-change {
-    0% {
-        background-color: #222222;
-    }
-    50% {
-        background-color: #1a1a1a;
-    }
-    100% {
-        background-color: #222222;
-    }
+.link-underline {
+    position: relative;
+    display: inline-block;
 }
-*/
+
+.link-underline:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: #24FF33;
+    height: 2px;
+    left: auto;
+    right: 0;
+    width: 0px;
+    transition: all .5s cubic-bezier(.23, 1, .32, 1);
+}
+
+.link-underline:hover:before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}

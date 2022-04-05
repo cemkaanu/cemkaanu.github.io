@@ -1,10 +1,9 @@
-@import "animations.css";
 body {
     margin: 0;
     text-align: center;
     color: #ffffff;
     background-color: #222222;
-    font-size: 144;
+    font-size: 120px;
     font-family: Montserrat, sans-serif;
 }
 
@@ -12,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 240px;
+    padding: 120px;
 }
 
 .category-item {
@@ -37,23 +36,23 @@ body {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 96px;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 72px;
 }
 
 p {
-    font-size: 32px;
+    font-size: 48px;
 }
 
 a {
     color: #24FF33;
-    font-size: 36px;
+    font-size: 54px;
 }
 
 a:visited {
     color: #24FF33;
-    font-size: 36px;
+    font-size: 54px;
 }
