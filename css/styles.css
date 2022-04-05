@@ -1,4 +1,5 @@
 @import "animations.css";
+@import "scroll.css";
 body {
     margin: 0;
     text-align: center;
@@ -6,7 +7,7 @@ body {
     background-color: #222222;
     font-size: 144;
     font-family: Montserrat, sans-serif;
-    animation: background-change 10s linear infinite;
+    /*animation: background-change 10s linear infinite;*/
 }
 
 .category-container {
@@ -18,7 +19,7 @@ body {
 
 .category-item {
     padding: 72px;
-    font-size: 24px;
+    font-size: 48px;
     text-align: center;
 }
 
@@ -38,23 +39,23 @@ body {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 64px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 48px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 32px;
 }
 
 a {
     color: #24FF33;
-    font-size: 18px;
+    font-size: 36px;
 }
 
 a:visited {
     color: #24FF33;
-    font-size: 18px;
+    font-size: 36px;
 }
