@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Games</title>
+    <title>About</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/animations.css">
 
     <script src="javascript/echarts.js"></script>
 </head>
@@ -32,7 +33,9 @@
                 legend: {
                     top: '5%',
                     left: 'center',
-                    color: '#ffffff'
+                    itemStyle: {
+                        color: '#ccc'
+                    }
                 },
                 series: [{
                     type: 'pie',
@@ -121,11 +124,16 @@
         </script>
     </div>
 
+    <a class="link-underline" href="/projects.html">
+        <h2>Check Out My Projects!</h2>
+    </a>
+
 </body>
 
 <footer>
-    <a class="link-underline" href="https://cemkaanu.github.io" style="margin-right: 19%; padding-top: 100px; padding-bottom: 50px;">@cemkaanu</a>
-    <a class="link-underline" href="/about.html" style="margin-left: 17%; padding-top: 100px; padding-bottom: 50px;">about</a>
+    <a href="https://cemkaanu.github.io" style="margin-right: 19%; padding-top: 100px; padding-bottom: 50px;">@cemkaanu</a>
+    <a href="/about.html" style="margin-left: 17%; padding-top: 100px; padding-bottom: 50px;">about</a>
+    <a href="/projects.html" style="margin-left: 5%; padding-top: 100px; padding-bottom: 50px;">projects</a>
 </footer>
 
 </html>

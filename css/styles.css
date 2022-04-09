@@ -74,7 +74,8 @@ footer {
 }
 
 #tech-skill,
-#language {
+#language,
+#current-game {
     padding: 50px;
     text-align: center;
 }
