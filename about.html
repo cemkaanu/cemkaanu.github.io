@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Games</title>
     <link rel="stylesheet" href="/css/styles.css">
+
+    <script src="javascript/echarts.js"></script>
 </head>
 
 <body>
@@ -12,6 +14,36 @@
     <h1 style="text-align: left; padding-left: 100px;">Cem Kaan Uğur</h1>
     <p style="padding: 240px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida enim eget velit efficitur, vitae mollis eros viverra. Sed at erat at nulla faucibus vulputate ac id libero. Nunc quis sodales nunc. Fusce tempus porta mi vel tempus. Integer
         a viverra nulla. Donec id velit ut diam imperdiet sodales sit amet non lectus. Vivamus vehicula felis dignissim nisl efficitur rhoncus.</p>
+
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // Initialize the echarts instance based on the prepared dom
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // Specify the configuration items and data for the chart
+        var option = {
+            title: {
+                text: 'ECharts 101'
+            },
+            tooltip: {},
+            legend: {
+                data: ['tests']
+            },
+            xAxis: {
+                data: ['Test1', 'Test2', 'Test3', 'Test4', 'Test5', 'Test6']
+            },
+            yAxis: {},
+            series: [{
+                name: 'Test Amount',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+
+        // Display the chart using the configuration items and data just specified.
+        myChart.setOption(option);
+    </script>
+
 </body>
 
 <footer>
