@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/styles.css">
 
     <script src="javascript/echarts.js"></script>
+    <script src="theme/voxel-cold.js"></script>
+    <script src="theme/voxel-hot.js"></script>
 </head>
 
 <body>
@@ -15,33 +17,86 @@
     <p style="padding: 240px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida enim eget velit efficitur, vitae mollis eros viverra. Sed at erat at nulla faucibus vulputate ac id libero. Nunc quis sodales nunc. Fusce tempus porta mi vel tempus. Integer
         a viverra nulla. Donec id velit ut diam imperdiet sodales sit amet non lectus. Vivamus vehicula felis dignissim nisl efficitur rhoncus.</p>
 
-    <div id="main" style="width: 600px;height:400px;"></div>
-    <script type="text/javascript">
-        // Initialize the echarts instance based on the prepared dom
-        var myChart = echarts.init(document.getElementById('main'));
+    <div class="chart-container">
+        <div class="tech-skill" style="width: 600px;height:600px;"></div>
+        <div class="language" style="width: 600px;height:600px;"></div>
+    </div>
 
-        // Specify the configuration items and data for the chart
+    <script type="text/javascript">
+        var techSkillChart = echarts.init(document.getElementsByClassName('tech-skill'), 'voxel-cold');
+
         var option = {
-            title: {
-                text: 'ECharts 101'
-            },
-            tooltip: {},
             legend: {
-                data: ['tests']
+                top: '5%',
+                left: 'center'
             },
-            xAxis: {
-                data: ['Test1', 'Test2', 'Test3', 'Test4', 'Test5', 'Test6']
-            },
-            yAxis: {},
             series: [{
-                name: 'Test Amount',
-                type: 'bar',
-                data: [5, 20, 36, 10, 10, 20]
+                type: 'pie',
+                radius: ['40%', '70%'],
+                avoidLabelOverlap: false,
+                itemStyle: {
+                    borderRadius: 10,
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                label: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    label: {
+                        show: true,
+                        fontSize: '40',
+                        fontWeight: 'bold'
+                    }
+                },
+                labelLine: {
+                    show: false
+                },
+                data: [{
+                    value: 120,
+                    name: 'C#'
+                }, {
+                    value: 60,
+                    name: 'Java'
+                }, {
+                    value: 30,
+                    name: 'C'
+                }, {
+                    value: 20,
+                    name: 'HTML/CSS'
+                }, {
+                    value: 10,
+                    name: 'Python'
+                }]
             }]
         };
 
-        // Display the chart using the configuration items and data just specified.
-        myChart.setOption(option);
+        techSkillChart.setOption(option);
+    </script>
+
+    <script type="text/javascript">
+        var languageChart = echarts.init(document.getElementsByClassName('language'), 'voxel-hot');
+
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['Turkish', 'English', 'Russian']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [10, 9, 2, ],
+                type: 'bar',
+                showBackground: true,
+                backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                }
+            }]
+        };
+
+        languageChart.setOption(option);
     </script>
 
 </body>
