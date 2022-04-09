@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="/css/styles.css">
 
     <script src="javascript/echarts.js"></script>
-    <script src="theme/voxel-cold.js"></script>
-    <script src="theme/voxel-hot.js"></script>
 </head>
 
 <body>
@@ -18,14 +16,16 @@
         a viverra nulla. Donec id velit ut diam imperdiet sodales sit amet non lectus. Vivamus vehicula felis dignissim nisl efficitur rhoncus.</p>
 
     <div class="chart-container">
+        <h2 style="text-align: center;">Skills</h2>
         <div id="tech-skill" style="width: 600px;height:600px;"></div>
         <script type="text/javascript">
-            var techSkillChart = echarts.init(document.getElementById('tech-skill'), 'voxel-cold');
+            var techSkillChart = echarts.init(document.getElementById('tech-skill'));
 
             var option = {
                 legend: {
                     top: '5%',
-                    left: 'center'
+                    left: 'center',
+                    color: '#ffffff'
                 },
                 series: [{
                     type: 'pie',
@@ -33,7 +33,7 @@
                     avoidLabelOverlap: false,
                     itemStyle: {
                         borderRadius: 10,
-                        borderColor: '#fff',
+                        borderColor: '#222',
                         borderWidth: 2
                     },
                     label: {
@@ -44,7 +44,8 @@
                         label: {
                             show: true,
                             fontSize: '40',
-                            fontWeight: 'bold'
+                            fontWeight: 'bold',
+                            color: '#ffffff'
                         }
                     },
                     labelLine: {
@@ -52,19 +53,24 @@
                     },
                     data: [{
                         value: 120,
-                        name: 'C#'
+                        name: 'C#',
+                        color: '#2483ff'
                     }, {
                         value: 60,
-                        name: 'Java'
+                        name: 'Java',
+                        color: '#24f0ff'
                     }, {
                         value: 30,
-                        name: 'C'
+                        name: 'C',
+                        color: '#24ffaf'
                     }, {
                         value: 20,
-                        name: 'HTML/CSS'
+                        name: 'HTML/CSS',
+                        color: '#24ff33'
                     }, {
                         value: 10,
-                        name: 'Python'
+                        name: 'Python',
+                        color: '#7fff24'
                     }]
                 }]
             };
@@ -74,7 +80,7 @@
 
         <div id="language" style="width: 600px;height:600px;"></div>
         <script type="text/javascript">
-            var languageChart = echarts.init(document.getElementById('language'), 'voxel-hot');
+            var languageChart = echarts.init(document.getElementById('language'));
 
             var option = {
                 xAxis: {
@@ -85,7 +91,16 @@
                     type: 'value'
                 },
                 series: [{
-                    data: [10, 9, 2, ],
+                    data: [{
+                        value: 10,
+                        color: '#ff2424'
+                    }, {
+                        value: 9,
+                        color: '#ff8724'
+                    }, {
+                        value: 2,
+                        color: '#fff424'
+                    }],
                     type: 'bar',
                     showBackground: true,
                     backgroundStyle: {
