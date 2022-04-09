@@ -15,13 +15,20 @@
     <p style="padding: 240px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida enim eget velit efficitur, vitae mollis eros viverra. Sed at erat at nulla faucibus vulputate ac id libero. Nunc quis sodales nunc. Fusce tempus porta mi vel tempus. Integer
         a viverra nulla. Donec id velit ut diam imperdiet sodales sit amet non lectus. Vivamus vehicula felis dignissim nisl efficitur rhoncus.</p>
 
+    <h2 style="text-align: center;">Skills</h2>
     <div class="chart-container">
-        <h2 style="text-align: center;">Skills</h2>
         <div id="tech-skill" style="width: 600px;height:600px;"></div>
         <script type="text/javascript">
             var techSkillChart = echarts.init(document.getElementById('tech-skill'));
 
             var option = {
+                color: [
+                    '#2483ff',
+                    '#24f0ff',
+                    '#24ffaf',
+                    '#24ff33',
+                    '#7fff24'
+                ],
                 legend: {
                     top: '5%',
                     left: 'center',
@@ -53,24 +60,19 @@
                     },
                     data: [{
                         value: 120,
-                        name: 'C#',
-                        color: '#2483ff'
+                        name: 'C#'
                     }, {
                         value: 60,
-                        name: 'Java',
-                        color: '#24f0ff'
+                        name: 'Java'
                     }, {
                         value: 30,
-                        name: 'C',
-                        color: '#24ffaf'
+                        name: 'C'
                     }, {
                         value: 20,
-                        name: 'HTML/CSS',
-                        color: '#24ff33'
+                        name: 'HTML/CSS'
                     }, {
                         value: 10,
-                        name: 'Python',
-                        color: '#7fff24'
+                        name: 'Python'
                     }]
                 }]
             };
@@ -83,6 +85,11 @@
             var languageChart = echarts.init(document.getElementById('language'));
 
             var option = {
+                color: [
+                    '#ff2424',
+                    '#ff8724',
+                    '#fff424'
+                ],
                 xAxis: {
                     type: 'category',
                     data: ['Turkish', 'English', 'Russian']
