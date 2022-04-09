@@ -72,8 +72,8 @@ footer {
     align-items: center;
 }
 
-.tech-skill,
-.language {
+#tech-skill,
+#language {
     padding: 50px;
     text-align: center;
 }

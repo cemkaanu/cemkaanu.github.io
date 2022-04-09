@@ -18,86 +18,85 @@
         a viverra nulla. Donec id velit ut diam imperdiet sodales sit amet non lectus. Vivamus vehicula felis dignissim nisl efficitur rhoncus.</p>
 
     <div class="chart-container">
-        <div class="tech-skill" style="width: 600px;height:600px;"></div>
-        <div class="language" style="width: 600px;height:600px;"></div>
-    </div>
+        <div id="tech-skill" style="width: 600px;height:600px;"></div>
+        <script type="text/javascript">
+            var techSkillChart = echarts.init(document.getElementById('tech-skill'), 'voxel-cold');
 
-    <script type="text/javascript">
-        var techSkillChart = echarts.init(document.getElementsByClassName('tech-skill'), 'voxel-cold');
-
-        var option = {
-            legend: {
-                top: '5%',
-                left: 'center'
-            },
-            series: [{
-                type: 'pie',
-                radius: ['40%', '70%'],
-                avoidLabelOverlap: false,
-                itemStyle: {
-                    borderRadius: 10,
-                    borderColor: '#fff',
-                    borderWidth: 2
+            var option = {
+                legend: {
+                    top: '5%',
+                    left: 'center'
                 },
-                label: {
-                    show: false,
-                    position: 'center'
-                },
-                emphasis: {
+                series: [{
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderRadius: 10,
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
                     label: {
-                        show: true,
-                        fontSize: '40',
-                        fontWeight: 'bold'
-                    }
-                },
-                labelLine: {
-                    show: false
-                },
-                data: [{
-                    value: 120,
-                    name: 'C#'
-                }, {
-                    value: 60,
-                    name: 'Java'
-                }, {
-                    value: 30,
-                    name: 'C'
-                }, {
-                    value: 20,
-                    name: 'HTML/CSS'
-                }, {
-                    value: 10,
-                    name: 'Python'
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '40',
+                            fontWeight: 'bold'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: [{
+                        value: 120,
+                        name: 'C#'
+                    }, {
+                        value: 60,
+                        name: 'Java'
+                    }, {
+                        value: 30,
+                        name: 'C'
+                    }, {
+                        value: 20,
+                        name: 'HTML/CSS'
+                    }, {
+                        value: 10,
+                        name: 'Python'
+                    }]
                 }]
-            }]
-        };
+            };
 
-        techSkillChart.setOption(option);
-    </script>
+            techSkillChart.setOption(option);
+        </script>
 
-    <script type="text/javascript">
-        var languageChart = echarts.init(document.getElementsByClassName('language'), 'voxel-hot');
+        <div id="language" style="width: 600px;height:600px;"></div>
+        <script type="text/javascript">
+            var languageChart = echarts.init(document.getElementById('language'), 'voxel-hot');
 
-        var option = {
-            xAxis: {
-                type: 'category',
-                data: ['Turkish', 'English', 'Russian']
-            },
-            yAxis: {
-                type: 'value'
-            },
-            series: [{
-                data: [10, 9, 2, ],
-                type: 'bar',
-                showBackground: true,
-                backgroundStyle: {
-                    color: 'rgba(180, 180, 180, 0.2)'
-                }
-            }]
-        };
+            var option = {
+                xAxis: {
+                    type: 'category',
+                    data: ['Turkish', 'English', 'Russian']
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [{
+                    data: [10, 9, 2, ],
+                    type: 'bar',
+                    showBackground: true,
+                    backgroundStyle: {
+                        color: 'rgba(180, 180, 180, 0.2)'
+                    }
+                }]
+            };
 
-        languageChart.setOption(option);
-    </script>
+            languageChart.setOption(option);
+        </script>
+    </div>
 
 </body>
 
