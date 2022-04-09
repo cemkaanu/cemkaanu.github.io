@@ -85,11 +85,6 @@
             var languageChart = echarts.init(document.getElementById('language'));
 
             var option = {
-                color: [
-                    '#ff2424',
-                    '#ff8724',
-                    '#fff424'
-                ],
                 xAxis: {
                     type: 'category',
                     data: ['Turkish', 'English', 'Russian']
@@ -100,13 +95,19 @@
                 series: [{
                     data: [{
                         value: 10,
-                        color: '#ff2424'
+                        itemStyle: {
+                            color: '#ff2424',
+                        }
                     }, {
                         value: 9,
-                        color: '#ff8724'
+                        itemStyle: {
+                            color: '#ff8724',
+                        }
                     }, {
                         value: 2,
-                        color: '#fff424'
+                        itemStyle: {
+                            color: '#fff424',
+                        }
                     }],
                     type: 'bar',
                     showBackground: true,
@@ -123,8 +124,8 @@
 </body>
 
 <footer>
-    <a href="https://cemkaanu.github.io" style="margin-right: 19%; padding-top: 100px; padding-bottom: 50px;">@cemkaanu</a>
-    <a href="/about.html" style="margin-left: 17%; padding-top: 100px; padding-bottom: 50px;">about</a>
+    <a class="link-underline" href="https://cemkaanu.github.io" style="margin-right: 19%; padding-top: 100px; padding-bottom: 50px;">@cemkaanu</a>
+    <a class="link-underline" href="/about.html" style="margin-left: 17%; padding-top: 100px; padding-bottom: 50px;">about</a>
 </footer>
 
 </html>
