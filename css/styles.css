@@ -42,6 +42,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 120px;
+    background-color: #444444
 }
 
 .category-item {
@@ -74,8 +75,7 @@ footer {
 }
 
 #tech-skill,
-#language,
-#current-game {
+#language {
     padding: 50px;
     text-align: center;
 }
