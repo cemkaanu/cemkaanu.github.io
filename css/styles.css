@@ -58,16 +58,23 @@ footer {
 }
 
 .link-item {
-    padding: 48px;
-    text-align: center;
-    color: #222222;
+    --color: #222;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
 }
 
 .card {
-    --background: linear-gradient(to left, #24FF33 0%, #a0ff24 100%);
+    --background: linear-gradient(to right, #24FF33 0%, #a0ff24 100%);
     width: 128px;
     height: 128px;
-    padding: 12;
+    padding: 12px;
     border-radius: 1rem;
     overflow: visible;
     background: #24FF33;
