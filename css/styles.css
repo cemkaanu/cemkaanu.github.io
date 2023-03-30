@@ -70,6 +70,11 @@ footer {
     border-radius: .7rem;
 }
 
+.link-item>img {
+    width: 64px;
+    height: 64px;
+}
+
 .card {
     --background: linear-gradient(to right, #24FF33 0%, #a0ff24 100%);
     width: 128px;
