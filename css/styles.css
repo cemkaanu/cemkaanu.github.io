@@ -26,16 +26,20 @@ footer {
 /* -------------------------------------------------------------------------------------------- */
 
 .games-container {
-    display: flex;
-    justify-content: center;
+	justify-content: center;
     align-items: center;
 	padding: 120px;
 	background-color: #333333
 }
 
-.games-container > *:not(:last-child) {
-    margin-block: 32px;
-} 
+.gamelinks-container {
+    display: flex;
+}
+
+.gamelinks-container > * {
+    margin: 16px;
+	border-radius: 1rem;
+}
 
 /* -------------------------------------------------------------------------------------------- */
 
