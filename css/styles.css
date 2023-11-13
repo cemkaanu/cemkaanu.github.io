@@ -7,26 +7,14 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-h1 {
-    font-size: 48px;
-}
-
-h2 {
-    font-size: 32px;
-}
-
-p {
-    font-size: 24px;
-}
-
 a {
     color: #24FF33;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 a:visited {
     color: #24FF33;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 footer {
@@ -35,6 +23,19 @@ footer {
     background-color: #111111
 }
 
+/* -------------------------------------------------------------------------------------------- */
+
+.games-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 120px;
+	background-color: #333333
+}
+
+.games-container > *:not(:last-child) {
+    margin-block: 32px;
+} 
 
 /* -------------------------------------------------------------------------------------------- */
 
@@ -43,7 +44,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 120px;
-    background-color: #333333
 }
 
 .category-item {
@@ -124,6 +124,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+	background-color: #333333
 }
 
 #tech-skill,
